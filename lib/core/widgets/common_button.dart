@@ -18,12 +18,14 @@ class CommonButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-            backgroundColor: background,
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24)),
+          backgroundColor: background,
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 16),
+        ),
         onPressed: onPressed,
         child: Text(
           text,
-          style: TextStyle(color: colorText, fontSize: 24),
+          style: TextStyle(
+              color: colorText, fontSize: 16, fontWeight: FontWeight.w700),
         ));
   }
 }
