@@ -1,5 +1,6 @@
+import 'package:casting_app/pages/pages.dart';
 import 'package:flutter/material.dart';
-import 'package:casting_app/core/theme/theme_app.dart';
+import 'package:casting_app/core/theme/theme.dart';
 import 'package:casting_app/core/widgets/widgets.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -16,16 +17,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(title: "title", backgroundColor: Colors.white),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            CommonButton(
-              text: 'connexion',
-              background: roseColor,
-              colorText: whiteColor,
-              onPressed: () {},
-            ),
+            SectionAuthWidgets(),
           ],
         ),
       ),

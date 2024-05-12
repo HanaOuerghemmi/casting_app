@@ -26,7 +26,7 @@ class MobileAppBar extends StatelessWidget {
           children: [
             Container(
               height: 100,
-              width: 200,
+              width: MediaQuery.of(context).size.width / 3,
               color: blackColor,
             ),
             Row(
@@ -47,7 +47,7 @@ class MobileAppBar extends StatelessWidget {
                   icon: const Icon(Icons.menu),
                   onPressed: () {},
                 ),
-              ].withSpaceBetween(width: 20),
+              ].withSpaceBetween(width: 10),
             ),
           ],
         ),
